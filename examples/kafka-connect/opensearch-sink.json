@@ -1,0 +1,17 @@
+{
+  "name": "wikimedia-opensearch-sink",
+  "config": {
+    "connector.class": "io.aiven.kafka.connect.opensearch.OpensearchSinkConnector",
+    "tasks.max": "1",
+    "topics": "wikimedia.recentchange.raw",
+    "connection.url": "https://opensearch:9200",
+    "connection.username": "admin",
+    "connection.password": "Str0ng!WikiSearch#2026",
+    "key.ignore": "false",
+    "schema.ignore": "true",
+    "behavior.on.malformed.documents": "warn",
+    "write.method": "upsert",
+    "max.in.flight.requests": "1",
+    "batch.size": "500"
+  }
+}

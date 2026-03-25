@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "WikimediaChange",
+  "namespace": "com.example.wikimedia",
+  "fields": [
+    { "name": "id", "type": "long" },
+    { "name": "type", "type": "string" },
+    { "name": "bot", "type": "boolean" },
+    { "name": "wiki", "type": ["null", "string"], "default": null },
+    { "name": "server_name", "type": ["null", "string"], "default": null },
+    { "name": "title", "type": ["null", "string"], "default": null },
+    { "name": "user", "type": ["null", "string"], "default": null },
+    { "name": "timestamp", "type": ["null", "long"], "default": null }
+  ]
+}
