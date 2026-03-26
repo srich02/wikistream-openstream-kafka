@@ -1,4 +1,4 @@
-# Documentation Guide
+# Documentation Guides
 
 The documentation is organized to match the Kafka learning path requested for this project.
 
